@@ -16,4 +16,6 @@ Load mongo credentials into mongo.cfg
 Invoke the program as ./dexterity.sh XXXXX /dev/usbporthere
 substituting your values.
 
+I edited some of this code on the fly in order to pretty it up and remove account references. In doing so I may have introduced some errors...
+
 --- Peter Miller
