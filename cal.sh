@@ -1,4 +1,5 @@
 #!/bin/bash
+#Peter Miller 10/2014
 # dexterity.sh config file
 # calibration data
 SLOPE=$1
