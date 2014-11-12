@@ -17,9 +17,11 @@ source hist.cfg
 #
 
 # create SGV from raw/filtered and calibration data
+# WIP, to say the least. Next change is to attempt to add slope adjust over first two days of new sensor.
 SGV=`awk -v r=$RAW -v f=$FILTERED -v s=$SLOPE -v i=$INT -v c=$SCALE 'BEGIN { printf "%2.0f\n", c*(((r+f)/2)-i)/s }'`
 
 # derive DIRECTION from SGV and historical records
+# WIP. Next change is to determine if the the most recent records are in fact "recent". 
 
 let DIFF=$SGV-$SGV3
 echo DIFFERENCE=$DIFF
