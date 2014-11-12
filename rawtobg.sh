@@ -93,5 +93,5 @@ echo "DATE2=$DATE1" >> hist.cfg
 echo "DATE3=$DATE2" >> hist.cfg
 
 
-curl -s -H "Accept: application/json" -H "Content-type: application/json" -X POST -d "$DATA" https://api.mongolab.com/api/1/databases/ochenmiller/collections/ochenmiller?apiKey=$APIKEY&dbname=ochenmiller&colname=ochenmiller&user=ochenmiller&passwd=$PW
+curl -s -H "Accept: application/json" -H "Content-type: application/json" -X POST -d "$DATA" https://api.mongolab.com/api/1/databases/$DB/collections/$COL?apiKey=$APIKEY&dbname=$DB&colname=$COL&user=$USER&passwd=$PW
 echo
